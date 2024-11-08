@@ -138,6 +138,7 @@ main .home{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 main .home .text h1{
@@ -149,52 +150,95 @@ main .home .text p{
     margin: 0px 0px 25px 0px;
 }
 
+main .home .buttons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
 main .home .audio{
     display: flex;
     margin: 25px;
 }
 
-main .home .circle{    
+main .home .audio .circle{    
     width: 75px;
     height: 75px;
-    background-color: var(--gray-border-color);
+    background-image: linear-gradient(to bottom, var(--gray-border-color), var(--gray-border-color), var(--purple));
     margin: 10px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 6px var(--purple);
+    animation: leds 2s linear infinite;
 }
 
-main .home .circle .circle{    
+main .home .audio .circle:nth-child(2) {
+    animation-delay: 0.66s;
+}
+
+main .home .audio .circle:nth-child(3) {
+    animation-delay: 1.33s;
+}
+
+main .home .audio .circle .circle{
     width: 70px;
     height: 70px;
     background-color: var(--gray-color);
-    margin: 10px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: none;
+    box-shadow: none;
 }
 
-main .home .circle .circle .circle{    
+main .home .audio .circle .circle .circle{    
     width: 50px;
     height: 50px;
     background-color: var(--background-color);
-    margin: 10px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main .home .musicname{
+@keyframes leds {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ledsborder {
+    0% {
+        border-color: var(--gray-border-color) var(--purple) var(--gray-border-color) var(--purple);
+    }
+    25% {
+        border-color: var(--purple) var(--gray-border-color) var(--purple) var(--gray-border-color);
+    }
+    50% {
+        border-color: var(--gray-border-color) var(--purple) var(--gray-border-color) var(--purple);
+    }
+    75% {
+        border-color: var(--purple) var(--gray-border-color) var(--purple) var(--gray-border-color);
+    }
+    100% {
+        border-color: var(--gray-border-color) var(--purple) var(--gray-border-color) var(--purple);
+    }
+}
+
+main .home .musicname {
     width: 300px;
     height: 50px;
-    border: solid 2px var(--gray-border-color);
+    border: solid 2px var(--purple);
+    border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 15px;
 }
 
 main .home .musicname p{
@@ -209,6 +253,10 @@ main .home .musicname i{
 main .home .musicname i:hover{
     color: var(--highlight-color);
     cursor: pointer;
+}
+
+main .circle{
+    background-color: var(--purple);
 }
 
 @media (max-width: 550px) {
