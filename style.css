@@ -293,6 +293,11 @@ main .circle .circle .circle .circle .circle{
     animation: leds 2s linear infinite;
 }
 
+main .painel .card{
+    border: solid 2px var(--purple);
+    border-radius: 15px;
+}
+
 @media (max-width: 550px) {
 
     header .nav {
