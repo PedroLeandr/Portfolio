@@ -8,7 +8,7 @@
 :root{
     --white-color: #EDEDED;
     --landing-gradient: #1E1E2C, #5D3F6E, #8A4C93;
-    --header-gradient: #1E1E2C, #1E1E2C, transparent;
+    --header-gradient: #1E1E2C, #1E1E2C, #1E1E2C, transparent;
     --landing-button-color: transparent;
     --landing-button-text-hover-color: #4B0082;
     --background-color: #1E1E2C;
@@ -131,7 +131,8 @@ header nav ul li{
 
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main .section {
@@ -140,8 +141,13 @@ main .section {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px 0px;
     box-sizing: border-box;
+    border-top: solid 1px var(--text-color);
+}
+
+main .section .title{
+    margin: 0px 0px 50px 0px;
 }
 
 main .me .logo{
@@ -155,10 +161,36 @@ main .me .content{
     margin: 0px 0px 0px 50px;
 }
 
-main .me .content h1{
-    margin: 0px 0px 25px 0px;
-}
+
 
 main .me .content p{
+    color: var(--text-color);
+}
+
+main .skills{
+    display: flex;
+    flex-direction: column;
+}
+
+main .skills .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main .skills .cards .skillcard{
+    text-align: center;
+    box-shadow: var(--text-color);
+    margin: 35px;
+}
+
+main .skills .cards .skillcard p{
+    margin: 15px;
+    color: var(--text-color);
+}
+
+main .skills .cards .skillcard i{
+    font-size: 50px;
     color: var(--text-color);
 }
