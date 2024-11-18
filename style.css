@@ -167,30 +167,30 @@ main .me .content p{
     color: var(--text-color);
 }
 
-main .skills{
+main .knowledge{
     display: flex;
     flex-direction: column;
 }
 
-main .skills .cards{
+main .knowledge .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
 }
 
-main .skills .cards .skillcard{
+main .knowledge .cards .skillcard{
     text-align: center;
     box-shadow: var(--text-color);
     margin: 35px;
 }
 
-main .skills .cards .skillcard p{
+main .knowledge .cards .skillcard p{
     margin: 15px;
     color: var(--text-color);
 }
 
-main .skills .cards .skillcard i{
+main .knowledge .cards .skillcard i{
     font-size: 50px;
     color: var(--text-color);
 }
