@@ -179,18 +179,18 @@ main .knowledge .cards{
     width: 100%;
 }
 
-main .knowledge .cards .skillcard{
+main .knowledge .cards .knowledgecard{
     text-align: center;
     box-shadow: var(--text-color);
     margin: 35px;
 }
 
-main .knowledge .cards .skillcard p{
+main .knowledge .cards .knowledgecard p{
     margin: 15px;
     color: var(--text-color);
 }
 
-main .knowledge .cards .skillcard i{
+main .knowledge .cards .knowledgecard i{
     font-size: 50px;
     color: var(--text-color);
 }
@@ -222,4 +222,34 @@ main .skills .cards .skillcard p{
 main .skills .cards .skillcard i{
     font-size: 50px;
     color: var(--text-color);
+}
+
+main .projects{
+    display: flex;
+    flex-direction: column;
+}
+
+main .projects .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main .projects .cards .projectcard{
+    text-align: center;
+    box-shadow: var(--text-color);
+    margin: 35px;
+    width: 33%;
+}
+
+main .projects .cards .projectcard p{
+    margin: 15px;
+    color: var(--text-color);
+}
+
+main .projects .cards .projectcard iframe{
+    border-radius: 15px;
+    border: solid 1px var(--text-color);
+    margin: 0px;
 }
