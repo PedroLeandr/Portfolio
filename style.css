@@ -20,8 +20,8 @@ html{
 }
 
 .toggletheme{
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    bottom: 10px;
     right: 10px;
     font-size: 15px;
     z-index: 1;
