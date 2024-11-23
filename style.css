@@ -19,6 +19,14 @@ html{
     scroll-behavior: smooth;
 }
 
+.toggletheme{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    z-index: 1;
+}
+
 .button{
     color: var(--text-color);
     text-decoration: none;
@@ -58,7 +66,7 @@ html{
 body{
     background-color: var(--background-color);
     color: var(--white-color);
-    
+    transition: background-color 0.3s ease, color 0.3s ease;
     font-family: 'Courier Prime', sans-serif;
 }
 
@@ -73,6 +81,7 @@ body{
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .landing p{
