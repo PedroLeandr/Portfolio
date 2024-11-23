@@ -250,6 +250,96 @@ main .projects .cards .projectcard p{
 
 main .projects .cards .projectcard iframe{
     border-radius: 15px;
+    width: 100%;
     border: solid 1px var(--text-color);
     margin: 0px;
+    height: 200px;
+}
+
+main .galery{
+    display: flex;
+    flex-direction: column;
+}
+
+main .galery .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main .galery .cards .projectcard{
+    text-align: center;
+    box-shadow: var(--text-color);
+    margin: 35px;
+    width: auto;
+}
+
+main .galery .cards .projectcard p{
+    margin: 15px;
+    color: var(--text-color);
+}
+
+main .galery .cards .projectcard .images{
+    border-radius: 15px;
+    width: 100%;
+    border: solid 1px var(--text-color);
+    margin: 0px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .galery .cards .projectcard .images .galeryimage{
+    margin: 15px;
+    border-radius: 15px;
+    width: auto;
+    height: 200px;
+}
+
+main .galery .seemore{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .galery .seemore i{
+    color: transparent;
+    margin-top: -17px;
+    transition: all 0.3s ease;
+}
+
+main .galery .seemore:hover i{
+    color: var(--white-color);
+    margin: 0px;
+}
+
+main .contact{
+    display: flex;
+    flex-direction: column;
+}
+
+main .contact .title{
+    text-align: center;
+}
+
+main .contact .title p{
+    color: var(--text-color);
+}
+
+main .contact .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    width: 100%;
+}
+
+main .contact .cards .contactinfo{
+    display: flex;
+    margin: 15px;
+}
+
+main .contact .cards .contactinfo i{
+    font-size: 25px;
+    margin: 0px 15px;
 }
